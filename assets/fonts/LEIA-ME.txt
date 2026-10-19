@@ -1,0 +1,3 @@
+Fontes.
+Atualmente o site usa Inter e Source Serif 4 pelo Google Fonts.
+Se quiser hospedar as fontes no próprio site, salve os arquivos .woff2 aqui e declare com @font-face no css/style.css.

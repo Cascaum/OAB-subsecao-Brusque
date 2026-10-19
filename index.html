@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Advocacia de Brusque – OAB Subseção Brusque</title>
+  <meta name="description"
+    content="O livro que reúne a história da Subseção da OAB em Brusque: as pessoas, as conquistas e os momentos que marcaram a advocacia brusquense.">
+  <!-- Para o link aparecer bonito no WhatsApp: assets/img/compartilhar.jpg (1200x630, JPG) -->
+  <meta property="og:title" content="Advocacia de Brusque – o livro">
+  <meta property="og:description" content="A história da OAB Subseção Brusque, contada por quem ajudou a construí-la.">
+  <meta property="og:image" content="assets/img/compartilhar.jpg">
+  <!-- IMAGEM: assets/icons/favicon.png (32x32 ou 64x64, PNG) -->
+  <link rel="icon" href="assets/icons/favicon.png">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Source+Serif+4:ital,wght@0,600;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+
+<body>
+  <div class="site-head">
+    <header class="top">
+      <!-- IMAGEM: assets/img/logo-oab-brusque.png (logo completo OAB + Subseção Brusque, fundo transparente) -->
+      <a class="logo" href="index.html"><img src="assets/img/sobre/logo-oab-brusque.png"
+          alt="OAB Santa Catarina – Subseção Brusque"></a>
+    </header>
+    <nav aria-label="Principal">
+      <a class="l on" href="index.html">Início</a><a class="l" href="index.html#livro">O livro</a><a class="l"
+        href="index.html#historia">História</a><a class="l" href="index.html#galeria">Galeria</a><a class="l"
+        href="pages/sobre.html">Sobre</a><a class="l" href="pages/publicacoes.html">Publicações</a><a class="l"
+        href="pages/contato.html">Contato</a>
+      <a class="buy" href="#link-compra" target="_blank" rel="noopener">Comprar</a>
+    </nav>
+  </div>
+
+  <main>
+    <section id="inicio" class="wrap hero">
+      <div>
+        <h1>Ordem dos Advogados de Brusque, contada por quem ajudou a construí-la</h1>
+        <p class="lead">O livro que reúne a história da Subseção da OAB na cidade: as pessoas, as conquistas e os
+          momentos que marcaram a advocacia brusquense.</p>
+        <a class="btn solid" href="#link-compra" target="_blank" rel="noopener">Comprar livro</a>
+        <a class="btn" href="#historia">Conhecer a história</a>
+        <p class="price">A partir de R$ [valor]</p>
+      </div>
+      <!-- IMAGENS DO LIVRO (trocam a cada 2s): lista BOOK_IMAGES em js/main.js
+       assets/img/livro/livro-01.png … livro-04.png (PNG fundo transparente, ~1000x1100). Ideal: mockup realista com sombra -->
+      <div class="slider" id="bookSlider" aria-label="Imagens do livro">
+        <div class="dots" id="bookDots"></div>
+      </div>
+      <a class="cue" href="#livro">Role para ver mais</a>
+    </section>
+
+    <section id="livro" class="pad soft">
+      <div class="wrap">
+        <div class="about">
+          <div>
+            <h2>Sobre o livro</h2>
+            <p>[Escrever aqui: o que é o livro, quem o escreveu, quantas páginas tem e o que o leitor vai encontrar.]
+            </p>
+            <p>[Escrever aqui: por que a OAB de Brusque decidiu registrar essa história agora.]</p>
+          </div>
+          <div>
+            <blockquote>“[Um trecho curto do livro ou depoimento de um ex-presidente da Subseção.]”<small>[Nome,
+                cargo]</small></blockquote>
+            <blockquote class="sm">“[Segundo depoimento, de outro advogado ou entrevistado.]”<small>[Nome,
+                cargo]</small></blockquote>
+          </div>
+        </div>
+        <!-- Use só números reais -->
+        <div class="stats">
+          <div><b>[XX]</b><span>anos de história da Subseção</span></div>
+          <div><b>[XXX]</b><span>páginas</span></div>
+          <div><b>[XX]</b><span>entrevistas realizadas</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="historia" class="pad">
+      <div class="wrap">
+        <h2>História da subseção</h2>
+        <p class="sub" style="color:var(--muted);margin-top:14px;max-width:60ch">Alguns marcos que aparecem no livro.
+          Passe o mouse (ou toque) sobre cada ponto para ver o que aconteceu.</p>
+        <!-- IMAGENS DOS CARDS: assets/img/historia/marco-01.jpg … marco-08.jpg (JPG 1280x720). Textos e anos: lista MARCOS em js/main.js -->
+        <div class="tl">
+          <ol id="timeline"></ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="pad soft gal">
+      <div class="wrap">
+        <h2>Galeria</h2>
+        <p class="sub">Entrevistas e imagens feitas durante a pesquisa para o livro.</p>
+        <div class="gh">
+          <h3>Entrevistas</h3><a class="btn" href="#youtube-canal" target="_blank" rel="noopener">Mais entrevistas no
+            canal do YouTube</a>
+        </div>
+        <!-- MINIATURAS: assets/img/galeria/entrevistas/entrevista-01.jpg … entrevista-08.jpg (JPG 1280x800). Dados: lista VIDEOS em js/main.js -->
+        <div class="car" data-car><button class="arrow l" aria-label="Entrevistas anteriores">‹</button>
+          <div class="track" id="videos"></div><button class="arrow r" aria-label="Próximas entrevistas">›</button>
+        </div>
+        <div class="gh">
+          <h3>Fotos</h3><a class="btn" href="#drive" target="_blank" rel="noopener">Mais imagens no Google Drive</a>
+        </div>
+        <!-- FOTOS: assets/img/galeria/fotos/foto-01.jpg … foto-08.jpg (JPG 1280x800). Legendas: lista FOTOS em js/main.js -->
+        <div class="car" data-car><button class="arrow l" aria-label="Fotos anteriores">‹</button>
+          <div class="track" id="photos"></div><button class="arrow r" aria-label="Próximas fotos">›</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="fgrid">
+        <div>
+          <a class="logo sm" href="index.html"><img src="assets/img/sobre/logo-oab-brusque.png"
+              alt="OAB Subseção Brusque"></a>
+        </div>
+        <div>
+          <h4>Páginas</h4>
+          <ul>
+            <li><a href="pages/sobre.html">Sobre</a></li>
+            <li><a href="pages/publicacoes.html">Publicações</a></li>
+            <li><a href="pages/contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <ul>
+            <li>[Endereço]</li>
+            <li>[Telefone]</li>
+            <li>[E-mail]</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Redes</h4>
+          <ul>
+            <li><a href="#instagram">Instagram</a></li>
+            <li><a href="#youtube-canal">YouTube</a></li>
+            <li><a href="#facebook">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copy">© [Ano] OAB – Subseção de Brusque. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

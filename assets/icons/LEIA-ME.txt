@@ -1,0 +1,4 @@
+Ícones do site.
+favicon.png (32x32 ou 64x64)
+apple-touch-icon.png (180x180, opcional)
+Ícones de redes sociais (instagram.svg, youtube.svg, facebook.svg) podem ser colocados aqui.

@@ -1,0 +1,9 @@
+logo-oab-brusque.png
+compartilhar.jpg  (1200x630, imagem do link no WhatsApp)
+livro/livro-01.png ... livro-04.png
+historia/marco-01.jpg ... marco-08.jpg
+galeria/entrevistas/entrevista-01.jpg ... entrevista-08.jpg
+galeria/fotos/foto-01.jpg ... foto-08.jpg
+sobre/subsecao.jpg, equipe-01.jpg ... equipe-03.jpg
+publicacoes/publicacao-01.jpg ... publicacao-03.jpg
+(o favicon fica em assets/icons/)
